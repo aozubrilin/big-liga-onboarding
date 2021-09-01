@@ -13,12 +13,15 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/keyframes";
+@import "global/animations";
 
 // Blocks
 //---------------------------------
-
+@import "blocks/preloader";
 @import "blocks/header";
-
+@import "blocks/intro";
+@import "blocks/dino";
 
 // используйте это для отключения ховеров на тач устройствах
 // ! но не используйте это для текстовых полей ( input, textarea )

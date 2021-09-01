@@ -1,0 +1,28 @@
+extends ../base/layout
+
+block variables
+  - var title = "Большая Лига"
+  - var hasHeader = true
+  - var headerMod = ""
+  - var hasFooter = true
+  - var footerMod = ""
+  - var currentPage = "main"
+
+block main
+  main.page-main
+    h1.visually-hidden
+      | Сайт компании Лига А
+    .intro.animation-group
+      .intro__bg
+          include ../../img/svg/intro-bg-letter-a.svg
+      .container
+        .intro__row
+          .intro-col.intro__col--left
+            h2.intro__title.fib.d-200
+               | Вёрстка и&nbsp;фронтенд любой сложности
+          .intro-col.intro__col--right
+            .intro__dino.dino.fib.d-400
+              include ../../img/svg/dino.svg
+
+            p.intro__text.fib.d-500
+              | для digital‑агентств, продуктовых&nbsp;компаний и&nbsp;фриланс‑команд

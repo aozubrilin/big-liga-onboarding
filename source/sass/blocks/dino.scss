@@ -1,0 +1,37 @@
+.dino-light {
+  &--1,
+  &--4 {
+    color: $color-vivid-violet;
+  }
+
+  &--2 {
+    color: $color-torch-red;
+  }
+
+  &--3 {
+    color: $color-neon-blue;
+  }
+
+  @include viewport--md {
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
+      color: $color-default-white;
+    }
+  }
+}
+
+.dino__flag {
+  color: $color-neon-blue;
+
+  @include viewport--md {
+    color: $color-default-white;
+  }
+}
+
+.dino__fire {
+  @include viewport--md {
+    display: none;
+  }
+}

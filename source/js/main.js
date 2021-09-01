@@ -1,7 +1,8 @@
-import {ieFix} from './utils/ie-fix';
-import {iosVhFix} from './utils/ios-vh-fix';
+import { ieFix } from "./utils/ie-fix";
+import { iosVhFix } from "./utils/ios-vh-fix";
 
-import {initModals} from './modules/init-modals';
+import { preloader } from "./modules/preloader";
+import { changeIntroTablet } from "./modules/changeIntroTablet";
 
 // Utils
 // ---------------------------------
@@ -12,4 +13,5 @@ iosVhFix();
 // Modules
 // ---------------------------------
 
-initModals();
+preloader();
+changeIntroTablet();

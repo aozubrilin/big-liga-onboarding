@@ -1,3 +1,9 @@
 .header {
-  display: block;
+  display: flex;
+  padding: 25px 35px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+  }
 }

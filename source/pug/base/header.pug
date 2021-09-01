@@ -1,0 +1,9 @@
+mixin header(headerMod, currentPage)
+  header(class=(headerMod) ? "header" + headerMod : "header")
+    .header__wrapper
+      if (currentPage !== "main")
+        a.header__logo(href="index.html", aria-label="Переход на главную")
+          include ../../img/svg/logo.svg
+      else
+        a.header__logo(aria-label="Логотип Лига А")
+          include ../../img/svg/logo.svg
